@@ -9,18 +9,22 @@ public class MouseLogic : MonoBehaviour
 
     [Header("Button Values")]
     public int healingAmount = 1;
+    public int ammoAmount = 1;
     private bool isHealPressed;
+    private GameObject player;
 
-    void Start()
+    void Awake()
     {
         Cursor.visible = true;
         Cursor.lockState = CursorLockMode.Confined;
+
+        player = GameObject.FindWithTag("Player");
     }
 
     void Update()
     {
         if (isHealPressed)
-            GameObject.FindWithTag("Player").gameObject.GetComponent<Health>().HealSelf(healingAmount);
+            player.gameObject.GetComponent<Health>().HealSelf(healingAmount);
     }
 
     public void onPointerDownHealing()
