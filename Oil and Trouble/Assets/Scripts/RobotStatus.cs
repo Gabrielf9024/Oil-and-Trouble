@@ -5,45 +5,26 @@ using UnityEngine.UI;
 
 public class RobotStatus : MonoBehaviour
 {
-    [Header("HealthUI")]
-    [SerializeField] float maxHealth;
-    [SerializeField] float health;
     private Slider slider;
+    private float maxHealth, health;
 
     void Awake()
     {
-        health = maxHealth;
+        float maxHealth = this.GetComponent<Health>().getMaxHealth();
+        float health = this.GetComponent<Health>().getHealth();
         slider = GameObject.Find("HealthBar").GetComponent<Slider>();
     }
     void Start()
     {
-        UpdateHealthBar();
     }
     void Update()
     {
-        if (health <= 0) //game over
-            Time.timeScale = 0;
-
-        if (Input.GetKey("o"))
-            DamageSelf(1);
+        UpdateHealthBar();
     }
 
     private void UpdateHealthBar()
     {
-        slider.value = health;
-    }
-
-    public void DamageSelf(float damage)
-    {
-        health -= damage;
-        UpdateHealthBar();
-    }
-
-    public void HealSelf(float healing)
-    {
-        health += healing;
-        if (health > maxHealth)
-            health = maxHealth;
-        UpdateHealthBar();
+        slider.value = this.GetComponent<Health>().getHealth();
     }
 }
+

@@ -20,7 +20,7 @@ public class MouseLogic : MonoBehaviour
     void Update()
     {
         if (isHealPressed)
-            GameObject.FindWithTag("Player").gameObject.GetComponent<RobotStatus>().HealSelf(healingAmount);
+            GameObject.FindWithTag("Player").gameObject.GetComponent<Health>().HealSelf(healingAmount);
     }
 
     public void onPointerDownHealing()
