@@ -1,4 +1,9 @@
-﻿using System.Collections;
+﻿// This script should handle the changing of variables for the robot's body
+// While Health is in another script, specifics for the player are handled here
+// Ammo is kept track here
+
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -7,12 +12,17 @@ public class RobotStatus : MonoBehaviour
 {
     private Slider slider;
     private float maxHealth, health;
+    [SerializeField] int ammo = 100;
+
+
 
     void Awake()
     {
-        float maxHealth = this.GetComponent<Health>().getMaxHealth();
-        float health = this.GetComponent<Health>().getHealth();
+        maxHealth = this.GetComponent<Health>().getMaxHealth();
+        health = this.GetComponent<Health>().getHealth();
         slider = GameObject.Find("HealthBar").GetComponent<Slider>();
+
+        UpdateAmmoCount();
     }
     void Start()
     {
@@ -26,5 +36,22 @@ public class RobotStatus : MonoBehaviour
     {
         slider.value = this.GetComponent<Health>().getHealth();
     }
+    private void UpdateAmmoCount()
+    {
+        GameObject.Find("AmmoCount").GetComponent<Text>().text = ammo.ToString();
+    }
+
+    public int getAmmo()
+    {
+        return ammo;
+    }
+    public void addAmmo(int count)
+    {
+        ammo += count;
+        if (ammo < 0)
+            ammo = 0;
+        UpdateAmmoCount();
+    }
+    
 }
 

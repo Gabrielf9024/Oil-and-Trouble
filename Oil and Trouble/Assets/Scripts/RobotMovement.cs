@@ -1,9 +1,13 @@
-﻿using System.Collections;
+﻿// This script handles the robot movement and shooting
+// Anything that involves control
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class RobotMovement : MonoBehaviour
 {
+    [Header("Movement")]
     [SerializeField]
     private float speed, jumpHeight;
     private float xInput;
@@ -12,6 +16,10 @@ public class RobotMovement : MonoBehaviour
 
     [SerializeField]
     private int maxJumps, jumpsLeft;
+
+    [Header("Shooting")]
+    [SerializeField] string shootKey = "j";
+    [SerializeField] Transform bullet;
 
 
 
@@ -43,5 +51,13 @@ public class RobotMovement : MonoBehaviour
             rb.velocity = new Vector2(rb.velocity.x, jumpHeight);
             --jumpsLeft;
         }
+
+        // Shooting
+        if (Input.GetKeyDown(shootKey) && GetComponent<RobotStatus>().getAmmo() > 0 )
+        {
+            Instantiate(bullet, transform.position + new Vector3(1, 0, 0), transform.rotation);
+            GetComponent<RobotStatus>().addAmmo(-1);
+        }
     }
+
 }
