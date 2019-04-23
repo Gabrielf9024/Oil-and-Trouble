@@ -228,9 +228,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
-  jumpHeight: 17
+  jumpHeight: 20
+  doubleJumpMinimizer: 0.8
   maxJumps: 2
   jumpsLeft: 0
+  movementAxis: Horizontal
+  jumpButton: space
   shootKey: j
   bullet: {fileID: 2531028024900680207, guid: 84fdc84933762f14e898ccdffce04c14, type: 3}
 --- !u!114 &1455232284297789696
@@ -245,7 +248,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e95393f57888fba4a80ad8df0883147a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ammo: 10
+  ammo: 900
 --- !u!114 &8408397174203852379
 MonoBehaviour:
   m_ObjectHideFlags: 0
