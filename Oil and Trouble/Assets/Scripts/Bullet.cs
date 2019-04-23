@@ -28,5 +28,7 @@ public class Bullet : MonoBehaviour
             collision.gameObject.GetComponent<Health>().DamageSelf(damage);
             Destroy(gameObject);
         }
+        else
+            Destroy(gameObject);
     }
 }

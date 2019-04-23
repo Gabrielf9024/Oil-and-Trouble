@@ -9,13 +9,17 @@ public class RobotMovement : MonoBehaviour
 {
     [Header("Movement")]
     [SerializeField]
-    private float speed, jumpHeight;
+    private float speed, jumpHeight, doubleJumpMinimizer;
     private float xInput;
 
     private Rigidbody2D rb;
 
     [SerializeField]
     private int maxJumps, jumpsLeft;
+
+    [Header("Controls")]
+    [SerializeField] string movementAxis = "Horizontal";
+    [SerializeField] string jumpButton = "space";
 
     [Header("Shooting")]
     [SerializeField] string shootKey = "j";
@@ -39,16 +43,20 @@ public class RobotMovement : MonoBehaviour
     void FixedUpdate()
     {
         // Left and Right movement
-        xInput = Input.GetAxisRaw("Horizontal");
+        xInput = Input.GetAxisRaw(movementAxis);
         rb.velocity = new Vector2(xInput * speed, rb.velocity.y);
     }
 
     void Update()
     {
         // Jumping
-        if (Input.GetKeyDown("space") && jumpsLeft > 0)
+        if (Input.GetKeyDown(jumpButton) && jumpsLeft > 0)
         {
-            rb.velocity = new Vector2(rb.velocity.x, jumpHeight);
+            if(jumpsLeft == maxJumps)
+                rb.velocity = new Vector2(rb.velocity.x, jumpHeight);
+            else
+                rb.velocity = new Vector2(rb.velocity.x, jumpHeight * doubleJumpMinimizer);
+
             --jumpsLeft;
         }
 
