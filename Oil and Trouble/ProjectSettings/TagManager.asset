@@ -4,9 +4,8 @@
 TagManager:
   serializedVersion: 2
   tags:
+  - Border
   - Ground
-  - Enemy
-  - Bullet
   layers:
   - Default
   - TransparentFX
@@ -43,4 +42,13 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Border
+    uniqueID: 566265745
+    locked: 0
+  - name: Plats
+    uniqueID: 2982897669
+    locked: 0
+  - name: Misc
+    uniqueID: 393944335
     locked: 0
