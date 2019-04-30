@@ -11,6 +11,7 @@ public class RobotMovement : MonoBehaviour
     [SerializeField]
     private float speed, jumpHeight, doubleJumpMinimizer;
     private float xInput;
+    public bool right;
 
     private Rigidbody2D rb;
 
@@ -49,6 +50,14 @@ public class RobotMovement : MonoBehaviour
 
     void Update()
     {
+        // Facing the right direction
+        if (xInput > 0)
+            right = true;
+        else if (xInput == 0)
+        { /*do nothing!*/ }
+        else
+            right = false;
+
         // Jumping
         if (Input.GetKeyDown(jumpButton) && jumpsLeft > 0)
         {
@@ -63,7 +72,11 @@ public class RobotMovement : MonoBehaviour
         // Shooting
         if (Input.GetKeyDown(shootKey) && GetComponent<RobotStatus>().getAmmo() > 0 )
         {
-            Instantiate(bullet, transform.position + new Vector3(1, 0, 0), transform.rotation);
+            if (right)
+                Instantiate(bullet, transform.position + new Vector3(1, 0, 0), transform.rotation);
+            else
+                Instantiate(bullet, transform.position - new Vector3(1, 0, 0), transform.rotation);
+
             GetComponent<RobotStatus>().addAmmo(-1);
         }
     }
