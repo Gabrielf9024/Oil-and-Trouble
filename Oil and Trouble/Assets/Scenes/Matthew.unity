@@ -211,6 +211,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2531028024900680201, guid: 84fdc84933762f14e898ccdffce04c14,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2531028024900680202, guid: 84fdc84933762f14e898ccdffce04c14,
+        type: 3}
+      propertyPath: speed
+      value: 12
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 84fdc84933762f14e898ccdffce04c14, type: 3}
 --- !u!1 &1678176980
@@ -594,6 +604,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 5
+  speed: 1
+  timer: 0
+  shootInterval: 4
+  bullet: {fileID: 2531028024900680207, guid: 84fdc84933762f14e898ccdffce04c14, type: 3}
+  bulletSpeed: 6
+  canShoot: 1
 --- !u!1001 &6645415665485311115
 PrefabInstance:
   m_ObjectHideFlags: 0
