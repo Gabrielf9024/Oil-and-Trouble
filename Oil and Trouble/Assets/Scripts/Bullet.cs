@@ -17,8 +17,8 @@ public class Bullet : MonoBehaviour
 
 
         // Used for facing left
-        if (!GameObject.FindWithTag("Player").GetComponent<RobotMovement>().right)
-            speed *= -1;
+ //       if (!GameObject.FindWithTag("Player").GetComponent<RobotMovement>().right)
+//            speed *= -1;
 
         rb.velocity = new Vector2(speed, 0);
     }
@@ -41,10 +41,7 @@ public class Bullet : MonoBehaviour
             collision.gameObject.GetComponent<Health>().DamageSelf(damage);
             Destroy(gameObject);
         }
-        else if (collision.gameObject.CompareTag("Bullet"))
-        {
-            //nothing
-        }
+
         else
             Destroy(gameObject);
     }

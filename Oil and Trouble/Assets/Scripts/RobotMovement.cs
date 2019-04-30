@@ -4,6 +4,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class RobotMovement : MonoBehaviour
 {
@@ -28,9 +30,16 @@ public class RobotMovement : MonoBehaviour
 
     public static Vector2 coords;
 
-    private void Awake()
+    Scene scene;
+
+    GameObject wintext;
+
+    private void Awake()   
     {
         rb = GetComponent<Rigidbody2D>();
+        scene = SceneManager.GetActiveScene();
+        wintext = GameObject.Find("WinText");
+        wintext.SetActive(false);
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -38,6 +47,20 @@ public class RobotMovement : MonoBehaviour
         if (collision.gameObject.tag == "Ground")
         {
             jumpsLeft = maxJumps;
+        }
+
+    }
+
+    private void OnTriggerEnter2D( Collider2D trigger )
+    { 
+        if( trigger.gameObject.tag == "Death" )
+        {
+            SceneManager.LoadScene(scene.name);
+        }
+        if (trigger.gameObject.tag == "Win")
+        {
+            Time.timeScale = 0;
+            wintext.SetActive(true);
         }
     }
 
@@ -54,14 +77,14 @@ public class RobotMovement : MonoBehaviour
 
     void Update()
     {
-        // Facing the right direction
+ /*       // Facing the right direction
         if (xInput > 0)
             right = true;
         else if (xInput == 0)
-        { /*do nothing!*/ }
+        { do nothing! }
         else
             right = false;
-
+*/
         // Jumping
         if (Input.GetKeyDown(jumpButton) && jumpsLeft > 0)
         {
@@ -78,11 +101,11 @@ public class RobotMovement : MonoBehaviour
         {
             if (dirFacing == 1f)
             {
-                Transform bulletRef = Instantiate(bullet, transform.position + new Vector3(1, 0, 0), transform.rotation);
+                Transform bulletRef = Instantiate(bullet, transform.position + new Vector3(2, 0, 0), transform.rotation);
             }
             else
             {
-                Transform bulletRef = Instantiate(bullet, transform.position + new Vector3(-1, 0, 0), Quaternion.Euler(0f, 0f, 180f));
+                Transform bulletRef = Instantiate(bullet, transform.position + new Vector3(-2, 0, 0), Quaternion.Euler(0f, 0f, 180f));
                 bulletRef.GetComponent<Bullet>().ChangeDirection();
             }
             GetComponent<RobotStatus>().addAmmo(-1);

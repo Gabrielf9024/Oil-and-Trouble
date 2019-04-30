@@ -157,3 +157,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 5
+  speed: 2
+  timer: 1
+  shootInterval: 1
+  bullet: {fileID: 2531028024900680207, guid: 84fdc84933762f14e898ccdffce04c14, type: 3}
+  bulletSpeed: 6
+  canShoot: 1
