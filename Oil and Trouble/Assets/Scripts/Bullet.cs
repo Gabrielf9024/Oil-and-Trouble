@@ -10,8 +10,12 @@ public class Bullet : MonoBehaviour
     void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
-        rb.velocity = new Vector2(speed, 0);
 
+        // Used for facing left
+        if (!GameObject.FindWithTag("Player").GetComponent<RobotMovement>().right)
+            speed *= -1;
+
+        rb.velocity = new Vector2(speed, 0);
     }
     void Start()
     {

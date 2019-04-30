@@ -99,7 +99,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6645415666024422956}
-  m_LocalRotation: {x: -0, y: -0, z: 0.0015049558, w: 0.99999887}
+  m_LocalRotation: {x: 0, y: 0, z: 0.0015010235, w: 0.99999887}
   m_LocalPosition: {x: -100.01, y: 0.04, z: -1.7354665}
   m_LocalScale: {x: 10, y: 10, z: 1}
   m_Children:
@@ -167,4 +167,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8eb4e92eedd902e4d9a8152673ec4877, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  healingAmount: 1
+  healingAmount: 0.25
+  ammoAmount: 1

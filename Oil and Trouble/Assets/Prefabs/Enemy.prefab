@@ -13,7 +13,8 @@ GameObject:
   - component: {fileID: 679107794263120449}
   - component: {fileID: 2153370251755469246}
   - component: {fileID: 5881711945470382909}
-  m_Layer: 0
+  - component: {fileID: 4627001387717723769}
+  m_Layer: 9
   m_Name: Enemy
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -143,3 +144,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 10
   health: 0
+--- !u!114 &4627001387717723769
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4627001387717723768}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fdee3ed86c0e99d49b4340c2f4143304, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 5
