@@ -11,7 +11,7 @@ public class RobotMovement : MonoBehaviour
     [SerializeField]
     private float speed, jumpHeight, doubleJumpMinimizer;
     private float xInput;
-    public bool right;
+    private float dirFacing = 1f;
 
     private Rigidbody2D rb;
 
@@ -26,7 +26,7 @@ public class RobotMovement : MonoBehaviour
     [SerializeField] string shootKey = "j";
     [SerializeField] Transform bullet;
 
-
+    public static Vector2 coords;
 
     private void Awake()
     {
@@ -45,6 +45,10 @@ public class RobotMovement : MonoBehaviour
     {
         // Left and Right movement
         xInput = Input.GetAxisRaw(movementAxis);
+        if (xInput > 0)
+            dirFacing = 1f;
+        else if (xInput < 0)
+            dirFacing = -1f;
         rb.velocity = new Vector2(xInput * speed, rb.velocity.y);
     }
 
@@ -72,13 +76,19 @@ public class RobotMovement : MonoBehaviour
         // Shooting
         if (Input.GetKeyDown(shootKey) && GetComponent<RobotStatus>().getAmmo() > 0 )
         {
-            if (right)
-                Instantiate(bullet, transform.position + new Vector3(1, 0, 0), transform.rotation);
+            if (dirFacing == 1f)
+            {
+                Transform bulletRef = Instantiate(bullet, transform.position + new Vector3(1, 0, 0), transform.rotation);
+            }
             else
-                Instantiate(bullet, transform.position - new Vector3(1, 0, 0), transform.rotation);
-
+            {
+                Transform bulletRef = Instantiate(bullet, transform.position + new Vector3(-1, 0, 0), Quaternion.Euler(0f, 0f, 180f));
+                bulletRef.GetComponent<Bullet>().ChangeDirection();
+            }
             GetComponent<RobotStatus>().addAmmo(-1);
         }
+
+        coords = rb.position;
     }
 
 }

@@ -206,6 +206,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2531028024900680201, guid: 84fdc84933762f14e898ccdffce04c14,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2531028024900680202, guid: 84fdc84933762f14e898ccdffce04c14,
+        type: 3}
+      propertyPath: speed
+      value: 12
+      objectReference: {fileID: 0}
     - target: {fileID: 2531028024900680203, guid: 84fdc84933762f14e898ccdffce04c14,
         type: 3}
       propertyPath: m_Name
@@ -457,6 +467,31 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7558eda1601e4e040adcbef09c630ddd, type: 3}
+--- !u!1 &4627001387717723768 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4627001387717723768, guid: 7558eda1601e4e040adcbef09c630ddd,
+    type: 3}
+  m_PrefabInstance: {fileID: 2010134690672220294}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &4627001387717723769
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4627001387717723768}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fdee3ed86c0e99d49b4340c2f4143304, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 5
+  speed: 1
+  timer: 0
+  shootInterval: 4
+  bullet: {fileID: 2531028024900680207, guid: 84fdc84933762f14e898ccdffce04c14, type: 3}
+  bulletSpeed: 6
+  canShoot: 1
 --- !u!1001 &6645415665485311115
 PrefabInstance:
   m_ObjectHideFlags: 0
