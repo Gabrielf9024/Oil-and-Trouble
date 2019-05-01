@@ -21,6 +21,7 @@ public class Shield : MonoBehaviour
     {
         if( collision.gameObject.CompareTag("Bullet") )
         {
+            //Debug.Log("hit shield");
             Destroy(collision.gameObject);
         }
     }

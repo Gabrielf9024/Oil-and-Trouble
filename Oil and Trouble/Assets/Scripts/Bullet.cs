@@ -36,11 +36,14 @@ public class Bullet : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Enemy") || collision.gameObject.CompareTag("Player"))
+        if (collision.collider.CompareTag("Enemy") || collision.collider.CompareTag("Player"))
         {
+            //Debug.Log("tag is = " + collision.collider.tag);
             collision.gameObject.GetComponent<Health>().DamageSelf(damage);
             Destroy(gameObject);
         }
+        else if (collision.collider.CompareTag("SpawnRadius"))
+        { /*nothing*/ }
 
         else
             Destroy(gameObject);

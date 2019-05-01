@@ -6,6 +6,11 @@ TagManager:
   tags:
   - Border
   - Ground
+  - Enemy
+  - Bullet
+  - Shield
+  - Spawner
+  - SpawnRadius
   layers:
   - Default
   - TransparentFX
