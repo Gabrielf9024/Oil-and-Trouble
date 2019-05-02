@@ -125,11 +125,11 @@ public class RobotMovement : MonoBehaviour
         {
             if (dirFacing == 1f)
             {
-                Transform bulletRef = Instantiate(bullet, transform.position + new Vector3(2, 0, 0), transform.rotation);
+                Transform bulletRef = Instantiate(bullet, transform.position + new Vector3(2, 0, -1), transform.rotation);
             }
             else
             {
-                Transform bulletRef = Instantiate(bullet, transform.position + new Vector3(-2, 0, 0), Quaternion.Euler(0f, 0f, 180f));
+                Transform bulletRef = Instantiate(bullet, transform.position + new Vector3(-2, 0, -1), Quaternion.Euler(0f, 0f, 180f));
                 bulletRef.GetComponent<Bullet>().ChangeDirection();
             }
             GetComponent<RobotStatus>().addAmmo(-1);
