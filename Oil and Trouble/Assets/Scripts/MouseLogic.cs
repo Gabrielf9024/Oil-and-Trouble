@@ -8,10 +8,12 @@ public class MouseLogic : MonoBehaviour
 {
 
     [Header("Button Values")]
-    public int healingAmount = 1;
+    public float healingAmount = 1;
     public int ammoAmount = 1;
     private bool isHealPressed;
     private GameObject player;
+
+    private GameObject rightShield, leftShield;
 
     void Awake()
     {
@@ -19,6 +21,10 @@ public class MouseLogic : MonoBehaviour
         Cursor.lockState = CursorLockMode.Confined;
 
         player = GameObject.FindWithTag("Player");
+        leftShield = GameObject.Find("LeftShield");
+        rightShield = GameObject.Find("RightShield");
+        SetLeftShield(false);
+        SetRightShield(false);
     }
 
     void Update()
@@ -34,5 +40,14 @@ public class MouseLogic : MonoBehaviour
     public void onPointerUpHealing()
     {
         isHealPressed = false;
+    }
+
+    public void SetRightShield( bool status )
+    {
+        rightShield.gameObject.SetActive(status);
+    }
+    public void SetLeftShield( bool status )
+    {
+        leftShield.gameObject.SetActive(status);
     }
 }

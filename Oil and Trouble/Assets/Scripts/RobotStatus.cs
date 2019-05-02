@@ -12,9 +12,7 @@ public class RobotStatus : MonoBehaviour
 {
     private Slider slider;
     private float maxHealth, health;
-    [SerializeField] int ammo = 100;
-
-
+    [SerializeField] int ammo, ammoLimit;
 
     void Awake()
     {
@@ -23,6 +21,7 @@ public class RobotStatus : MonoBehaviour
         slider = GameObject.Find("HealthBar").GetComponent<Slider>();
 
         UpdateAmmoCount();
+
     }
     void Start()
     {
@@ -50,6 +49,8 @@ public class RobotStatus : MonoBehaviour
         ammo += count;
         if (ammo < 0)
             ammo = 0;
+        if (ammo > ammoLimit)
+            ammo = ammoLimit;
         UpdateAmmoCount();
     }
     
