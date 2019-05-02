@@ -1,0 +1,677 @@
+fileFormatVersion: 2
+guid: 824238b5d66d4ba4ea4f57fc3fe54ebe
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3961290001386931597
+    second: rocket spritesheet_0
+  - first:
+      213: 8592371040052830124
+    second: rocket spritesheet_1
+  - first:
+      213: -7945103778419807422
+    second: rocket spritesheet_2
+  - first:
+      213: -2839577412792588698
+    second: rocket spritesheet_3
+  - first:
+      213: 5083396561217086850
+    second: rocket spritesheet_4
+  - first:
+      213: 5293911285869549523
+    second: rocket spritesheet_5
+  - first:
+      213: -1354437076806494454
+    second: rocket spritesheet_6
+  - first:
+      213: 8613192341206715373
+    second: rocket spritesheet_7
+  - first:
+      213: -3611999745466390638
+    second: rocket spritesheet_8
+  - first:
+      213: -4304384483466750939
+    second: rocket spritesheet_9
+  - first:
+      213: 8664610446967582450
+    second: rocket spritesheet_10
+  - first:
+      213: 1087014480173991279
+    second: rocket spritesheet_11
+  - first:
+      213: -6948975349743679128
+    second: rocket spritesheet_12
+  - first:
+      213: -4047251873126532656
+    second: rocket spritesheet_13
+  - first:
+      213: 5356796595500682725
+    second: rocket spritesheet_14
+  - first:
+      213: 3966779624130463380
+    second: rocket spritesheet_15
+  - first:
+      213: -6097695648240802172
+    second: rocket spritesheet_16
+  - first:
+      213: 4184819841866048077
+    second: rocket spritesheet_17
+  - first:
+      213: 8238818652907415404
+    second: rocket spritesheet_18
+  - first:
+      213: -8561278138358295530
+    second: rocket spritesheet_19
+  - first:
+      213: 7417223661961709817
+    second: rocket spritesheet_20
+  - first:
+      213: -1155602097442805992
+    second: rocket spritesheet_21
+  - first:
+      213: 5466456901620854615
+    second: rocket spritesheet_22
+  - first:
+      213: 8859245678258989884
+    second: rocket spritesheet_23
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 64
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: rocket spritesheet_0
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 1010
+        width: 51
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc72578e639e9da42bd3637d3bae5e4b
+      internalID: 3961290001386931597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rocket spritesheet_1
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 1010
+        width: 44
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45035c997fbc9944a8afcc84a61eae22
+      internalID: 8592371040052830124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rocket spritesheet_2
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 1011
+        width: 49
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0a318c22ca66d043a06d8c63cfa3073
+      internalID: -7945103778419807422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rocket spritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 890
+        width: 52
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a4b7c57f6d10ae4da18c0b54fdede77
+      internalID: -2839577412792588698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rocket spritesheet_4
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 890
+        width: 55
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4a50ecd2b90bbc4b871fca912201633
+      internalID: 5083396561217086850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rocket spritesheet_5
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 889
+        width: 45
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84d85041e408f86489b6bb82b7bd6321
+      internalID: 5293911285869549523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rocket spritesheet_6
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 769
+        width: 53
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2b08f35bbae5434aaa23b1cd1f48026
+      internalID: -1354437076806494454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rocket spritesheet_7
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 769
+        width: 46
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 488aaea0d20c2574d8d94a34b3d43573
+      internalID: 8613192341206715373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rocket spritesheet_8
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 650
+        width: 51
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72b6abd20c6e17b47936c4e1da1d318c
+      internalID: -3611999745466390638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rocket spritesheet_9
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 650
+        width: 44
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a9f307f874197944bd6c105e3c84069
+      internalID: -4304384483466750939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rocket spritesheet_10
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 651
+        width: 49
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de2bf59308811e249864c62c6b5ba087
+      internalID: 8664610446967582450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rocket spritesheet_11
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 530
+        width: 52
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4e5c6475d7fddd44b13a5df0083cf42
+      internalID: 1087014480173991279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rocket spritesheet_12
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 530
+        width: 55
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48a3831191b0c164f89aae78cfd8d572
+      internalID: -6948975349743679128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rocket spritesheet_13
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 529
+        width: 45
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a334ca4b76cc2394f8a3f7c279ff143e
+      internalID: -4047251873126532656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rocket spritesheet_14
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 409
+        width: 53
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55d41314cd8a00a4ea046e630250c853
+      internalID: 5356796595500682725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rocket spritesheet_15
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 409
+        width: 46
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 275efb742e54a8541a28839023848865
+      internalID: 3966779624130463380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rocket spritesheet_16
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 260
+        width: 13
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef240e55201168448bedc1df4924fe04
+      internalID: -6097695648240802172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rocket spritesheet_17
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 267
+        width: 13
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12bca546f4c6ddd429cdea5c5241d698
+      internalID: 4184819841866048077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rocket spritesheet_18
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 262
+        width: 12
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd835d75e25c77f45a6f18acbbbfcd15
+      internalID: 8238818652907415404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rocket spritesheet_19
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 139
+        width: 13
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 394706823af2a1d43a156be6f1610bc9
+      internalID: -8561278138358295530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rocket spritesheet_20
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 136
+        width: 14
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8db03183118f964497a01e3734afc3f
+      internalID: 7417223661961709817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rocket spritesheet_21
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 145
+        width: 17
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 290aff7f3544295488d4efc84988068d
+      internalID: -1155602097442805992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rocket spritesheet_22
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 17
+        width: 17
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab396d75675be4447b390ee19ade0024
+      internalID: 5466456901620854615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rocket spritesheet_23
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 24
+        width: 17
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e608886fe22d45f4e8c935769d487619
+      internalID: 8859245678258989884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: f83035980863a7043aca21e998316de9
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
