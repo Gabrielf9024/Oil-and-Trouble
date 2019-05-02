@@ -36,6 +36,7 @@ public class RobotMovement : MonoBehaviour
     Scene scene;
 
     GameObject wintext;
+    private Animator anim; 
 
     private void Awake()   
     {
@@ -43,6 +44,7 @@ public class RobotMovement : MonoBehaviour
         scene = SceneManager.GetActiveScene();
         wintext = GameObject.Find("WinText");
         wintext.SetActive(false);
+        anim = GetComponent<Animator>();
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -82,6 +84,9 @@ public class RobotMovement : MonoBehaviour
         else if (xInput < 0)
             dirFacing = -1f;
         rb.velocity = new Vector2(xInput * speed, rb.velocity.y);
+
+        if (dirFacing == -1f)
+        { anim.Play("robot_walk_left_anim.anim"); }
     }
 
     void Update()
