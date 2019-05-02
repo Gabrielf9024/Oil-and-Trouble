@@ -7,6 +7,9 @@ TagManager:
   - Ground
   - Enemy
   - Bullet
+  - Death
+  - Shield
+  - Win
   layers:
   - Default
   - TransparentFX
