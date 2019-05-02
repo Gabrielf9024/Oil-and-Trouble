@@ -41,10 +41,14 @@ public class EnemyMovement : MonoBehaviour
             {
                 Transform bulletRef = Instantiate(bullet, transform.position + new Vector3(1, 0, 0), transform.rotation);
                 bulletRef.GetComponent<Bullet>().SetBulletSpeed(bulletSpeed);
+                bulletRef.GetComponent<AudioSource>().pitch = 0.6f;
+                bulletRef.GetComponent<AudioSource>().volume = 0.05f;
             }
             else
             {
                 Transform bulletRef = Instantiate(bullet, transform.position + new Vector3(-1, 0, 0), Quaternion.Euler(0f, 0f, 180f));
+                bulletRef.GetComponent<AudioSource>().pitch = 0.6f;
+                bulletRef.GetComponent<AudioSource>().volume = 0.05f;
                 bulletRef.GetComponent<Bullet>().ChangeDirection();
                 bulletRef.GetComponent<Bullet>().SetBulletSpeed(bulletSpeed * -1);
             }

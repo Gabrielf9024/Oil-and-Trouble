@@ -13,6 +13,9 @@ public class MouseLogic : MonoBehaviour
     private bool isHealPressed;
     private GameObject player;
 
+    public AudioSource audioSource;
+    public AudioClip [] audioClips;
+
     private GameObject rightShield, leftShield;
 
     void Awake()
@@ -36,6 +39,9 @@ public class MouseLogic : MonoBehaviour
     public void onPointerDownHealing()
     {
         isHealPressed = true;
+        audioSource.clip = audioClips[0];
+        audioSource.pitch = 1.0f;
+        audioSource.Play();
     }
     public void onPointerUpHealing()
     {
@@ -45,9 +51,15 @@ public class MouseLogic : MonoBehaviour
     public void SetRightShield( bool status )
     {
         rightShield.gameObject.SetActive(status);
+        audioSource.clip = audioClips[2];
+        audioSource.pitch = 0.7f;
+        audioSource.Play();
     }
     public void SetLeftShield( bool status )
     {
         leftShield.gameObject.SetActive(status);
+        audioSource.clip = audioClips[2];
+        audioSource.pitch = 1.0f;
+        audioSource.Play();
     }
 }

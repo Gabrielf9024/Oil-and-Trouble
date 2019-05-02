@@ -10,6 +10,7 @@ using UnityEngine.UI;
 
 public class RobotStatus : MonoBehaviour
 {
+    public AudioClip [] reloadClips;
     private Slider slider;
     private float maxHealth, health;
     [SerializeField] int ammo, ammoLimit;
@@ -46,7 +47,19 @@ public class RobotStatus : MonoBehaviour
     }
     public void addAmmo(int count)
     {
+        if (ammo == (ammoLimit-1) && count > 0)
+        {
+            this.GetComponent<AudioSource>().clip = reloadClips[1];
+            this.GetComponent<AudioSource>().pitch = 1.0f;
+            this.GetComponent<AudioSource>().Play();
+        }
         ammo += count;
+        if (count > 0 && ammo < ammoLimit)
+        {
+            this.GetComponent<AudioSource>().clip = reloadClips[0];
+            this.GetComponent<AudioSource>().pitch = 1.0f;
+            this.GetComponent<AudioSource>().Play();
+        }
         if (ammo < 0)
             ammo = 0;
         if (ammo > ammoLimit)

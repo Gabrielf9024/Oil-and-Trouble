@@ -15,6 +15,9 @@ public class RobotMovement : MonoBehaviour
     private float xInput;
     private float dirFacing = 1f;
 
+    public AudioSource audioSource;
+    public AudioClip[] roboSounds;
+
     private Rigidbody2D rb;
 
     [SerializeField]
@@ -46,6 +49,12 @@ public class RobotMovement : MonoBehaviour
     {
         if (collision.gameObject.tag == "Ground")
         {
+            if (jumpsLeft < 2)
+            {
+                audioSource.clip = roboSounds[1];
+                audioSource.pitch = 1.0f;
+                audioSource.Play();
+            }
             jumpsLeft = maxJumps;
         }
 
@@ -88,10 +97,20 @@ public class RobotMovement : MonoBehaviour
         // Jumping
         if (Input.GetKeyDown(jumpButton) && jumpsLeft > 0)
         {
-            if(jumpsLeft == maxJumps)
+            if (jumpsLeft == maxJumps)
+            {
+                audioSource.clip = roboSounds[0];
+                audioSource.pitch = 0.8f;
+                audioSource.Play();
                 rb.velocity = new Vector2(rb.velocity.x, jumpHeight);
+            }
             else
+            {
+                audioSource.clip = roboSounds[0];
+                audioSource.pitch = 1.0f;
+                audioSource.Play();
                 rb.velocity = new Vector2(rb.velocity.x, jumpHeight * doubleJumpMinimizer);
+            }
 
             --jumpsLeft;
         }
