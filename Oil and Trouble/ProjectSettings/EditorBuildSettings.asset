@@ -4,5 +4,8 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Gabriel.unity
+    guid: 235c7ea7cb169204e93da09fcdf8905e
   m_configObjects: {}
